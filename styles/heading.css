@@ -1,8 +1,35 @@
 .heading {
-  width: 100%;
-  background-color: beige;
-  margin: 40px 0;
-  padding: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.Info {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.dataContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.dataContainer input {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 40%;
+  padding: 11px 14px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14.5px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  border-radius: 8px;
+}
+
+.dataContainer input::placeholder {
+  color: white;
 }

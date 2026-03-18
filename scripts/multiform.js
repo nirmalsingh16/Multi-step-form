@@ -51,7 +51,6 @@ function nextPage() {
     nextbtn.disabled = true;
     nextbtn.style.display = "block";
     nextbtn.style.cursor = "not-allowed";
-    backbtn.disabled = true;
   }
 }
 
@@ -82,10 +81,18 @@ function saveData() {
     document.getElementById("coursename").value;
   document.getElementById("rpercentage").innerText =
     document.getElementById("percentage").value;
-  document.getElementById("rfathername").innerText =
-    document.getElementById("fathername").value;
-  document.getElementById("rmothername").innerText =
-    document.getElementById("mothername").value;
+  document.getElementById("rtenth").innerText =
+    document.getElementById("tenth").value;
+  document.getElementById("rtenthpercentage").innerText =
+    document.getElementById("tenthpercentage").value;
+  document.getElementById("rskill1").innerText =
+    document.getElementById("skill1").value;
+  document.getElementById("rskill2").innerText =
+    document.getElementById("skill2").value;
+  document.getElementById("rskill3").innerText =
+    document.getElementById("skill3").value;
+  document.getElementById("rskill4").innerText =
+    document.getElementById("skill4").value;
 
   const resume = (document.getElementById("resume").style.display = "block");
   console.log(resume);

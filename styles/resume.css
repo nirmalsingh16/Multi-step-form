@@ -1,20 +1,55 @@
+/* Resume container (SMALL) */
 #resume {
-  flex-wrap: wrap;
-  gap: 40px;
+  max-width: 450px; /* small size */
+  width: 90%;
+  margin: auto;
+  padding: 24px;
   display: none;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.personalInfo div {
-  display: flex;
-  gap: 10px;
+/* Headings */
+#resume h2 {
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #111;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
-.education div {
-  display: flex;
-  gap: 10px;
+/* Sections */
+.personalInfo,
+.education,
+.family {
+  margin-bottom: 16px;
 }
 
-.family div {
+/* Rows */
+#resume div > div {
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+/* Left label */
+#resume div > div p:first-child {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Right value */
+#resume div > div p:last-child {
+  font-size: 13px;
+  color: #555;
+}
+
+/* Name highlight */
+#rname {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
 }
