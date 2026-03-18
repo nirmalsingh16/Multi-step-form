@@ -17,6 +17,7 @@ const pages = document.querySelectorAll(".Info");
 const nextbtn = document.querySelector(".nextbtn");
 const backbtn = document.querySelector(".backbtn");
 const ProgressBar = document.querySelector(".progress");
+const progresschecks = document.getElementsByClassName("icons");
 
 // show first page
 showPage(pageNo);
@@ -35,6 +36,7 @@ function showPage(index) {
 
 function nextPage() {
   if (pageNo <= pages.length) {
+    progresschecks[pageNo].style.backgroundColor = "green";
     pageNo++;
     showPage(pageNo);
     calculateProgres();
@@ -46,6 +48,7 @@ function nextPage() {
   console.log(pageNo);
 
   if (pageNo === pages.length) {
+    progresschecks[pageNo].style.backgroundColor = "green";
     saveData();
     nextbtn.innerHTML = "Submitted";
     nextbtn.disabled = true;
@@ -56,6 +59,7 @@ function nextPage() {
 
 function prevPage() {
   if (pageNo > 0) {
+    progresschecks[pageNo].style.backgroundColor = "white";
     pageNo--;
     showPage(pageNo);
     calculateProgres();
