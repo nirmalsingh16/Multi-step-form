@@ -1,0 +1,8 @@
+.heading {
+  width: 100%;
+  background-color: beige;
+  margin: 40px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}

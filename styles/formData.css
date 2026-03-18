@@ -1,0 +1,17 @@
+.data {
+  display: flex;
+  width: 90%;
+  gap: 10px;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.data input {
+  padding: 8px 5px;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.hide {
+  display: none;
+}

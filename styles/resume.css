@@ -1,0 +1,20 @@
+#resume {
+  flex-wrap: wrap;
+  gap: 40px;
+  display: none;
+}
+
+.personalInfo div {
+  display: flex;
+  gap: 10px;
+}
+
+.education div {
+  display: flex;
+  gap: 10px;
+}
+
+.family div {
+  display: flex;
+  gap: 10px;
+}
