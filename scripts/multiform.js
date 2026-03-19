@@ -59,6 +59,9 @@ function nextPage() {
 
 function prevPage() {
   if (pageNo > 0) {
+    nextbtn.disabled = false;
+    nextbtn.style.display = "block";
+    nextbtn.style.cursor = "pointer";
     progresschecks[pageNo].style.backgroundColor = "white";
     pageNo--;
     showPage(pageNo);
